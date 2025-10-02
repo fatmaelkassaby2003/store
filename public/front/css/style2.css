@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+/* الحاوية الرئيسية */
+.container {
+  display: flex;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  max-width: 900px;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* صندوق الصورة */
+.image-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* نموذج التسجيل */
+.wrapper {
+  flex: 1;
+  max-width: 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* عنوان النموذج */
+.wrapper h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.wrapper h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #3EBA84;
+}
+
+.wrapper form {
+  margin-top: 20px;
+}
+
+.wrapper form .input-box {
+  height: 50px;
+  margin: 15px 0;
+}
+
+form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 16px;
+  color: #333;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+  border-color: #3EBA84;
+}
+
+form .policy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+form .policy input {
+  width: 18px;
+  height: 18px;
+}
+
+form h3 {
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input-box.button input {
+  width: 100%;
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #3EBA84;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.input-box.button input:hover {
+  background: #0ca261;
+}
+
+form .text h3 {
+  color: #333;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+form .text h3 a {
+  color: #3EBA84;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+form .text h3 a:hover {
+  text-decoration: underline;
+}
+
+/* اجعل التصميم متجاوبًا */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .image-box {
+    display: none; /* إخفاء الصورة في الشاشات الصغيرة */
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+}

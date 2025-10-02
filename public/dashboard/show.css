@@ -1,0 +1,164 @@
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Cairo', sans-serif;
+}
+
+.menu {
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.data-info {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+.box {
+    background-color: #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+.product-container {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 50%;
+    /* ضبط الحجم */
+    max-width: 500px;
+    /* تحديد الحد الأقصى */
+    margin: auto;
+    /* توسيط أفقي */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.product-container h3,
+.product-container p,
+.product-container h5 {
+    text-align: center;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.buttons button {
+    background-color: #3EBA84;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.buttons button:hover {
+    background-color: #3EBA84;
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    left: 52.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    color: #000;
+    font-family: 'Cairo', sans-serif;
+    font-size: 40px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+
+/* تحسين شكل زر الإغلاق */
+.close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ff4d4d;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #ff0000;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* مسافة بين الحقول */
+    align-items: center;
+    /* توسيط العناصر داخل الفورم */
+    justify-content: center;
+    /* محاذاة للمنتصف */
+    width: 100%;
+}
+
+.modal-content form label {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    /* جعل النصوص في المنتصف */
+    width: 100%;
+}
+
+.modal-content form input {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #ddd;
+    color: #000;
+    text-align: center;
+    width: 80%;
+}
+
+.modal-content form button {
+    padding: 15px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #3EBA84;
+    transition: background 0.3s, transform 0.2s;
+    width: 60%;
+    text-align: center;
+}
+
+.modal-content form button:hover {
+    background: #fff;
+    color: #000;
+    transform: scale(1.07);
+}
