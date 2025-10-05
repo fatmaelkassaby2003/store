@@ -1,0 +1,148 @@
+ /* تصميم الزر */
+ .add-product-btn {
+    display: inline-block;
+    background-color: #000;
+    /* كحلي فاتح */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-product-btn:hover {
+    background-color: #3EBA84;
+}
+
+/* تصميم الفورم المنبثق */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+textarea {
+    width: 100%;
+    /* توسيع العرض ليكون 100% من عرض الحاوية */
+    height: 100px;
+    /* ضبط الارتفاع ليكون مناسبًا */
+    color: black;
+    /* جعل النص باللون الأسود */
+    font-size: 16px;
+    /* زيادة حجم الخط لجعل النص أكثر وضوحًا */
+}
+
+/* تصغير عرض الفورم */
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 35%;
+    /* عرض أصغر */
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    color: red;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: darkred;
+}
+
+/* تنسيق التسميات (Labels) */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: black;
+    text-align: right;
+}
+
+/* تصغير حجم الحقول */
+input,
+select {
+    width: 95%;
+    padding: 8px;
+    /* تصغير الحشو */
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    /* تصغير الخط */
+}
+
+/* جعل لون نص قائمة الفئات أسود */
+select {
+    color: black;
+}
+
+select option {
+    color: black;
+}
+
+/* زر الإضافة */
+button {
+    background-color: #3EBA84;
+    color: white;
+    padding: 8px 12px;
+    /* تصغير حجم الزر */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+input,
+select,
+textarea {
+    color: black;
+}
+
+/* تصميم زر إضافة الشركة */
+.add-company-btn {
+    display: inline-block;
+    background-color: #000;
+    /* أزرق */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-company-btn:hover {
+    background-color: #3EBA84;
+}
+
+
+/* تحسين التصميم للشاشات الصغيرة */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 80%;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+}
